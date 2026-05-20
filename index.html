@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/output.css">
+    <link rel="stylesheet" href="CSS/default.css">
+    <title>Med Reda - Portfolio</title>
+</head>
+<body class="bg-main-bg text-text-color overflow-x-hidden!">
+    <header class="w-full py-7 max-tablet:py-6 fixed z-100 top-0 backdrop-blur-sm">
+        <div class="container flex-between">
+            <a href="#home" class="font-bold text-white text-2xl flex ">
+                Med
+                <span class="inline-block text-main-color text-3xl translate-y-[3px]">•</span>
+                Reda
+            </a>
+            <nav class="z-1000 max-tablet:absolute max-tablet:w-[60%] max-tablet:py-6 max-tablet:px-5 max-tablet:h-screen max-tablet:top-0 max-lg:-left-full duration-200 max-tablet:bg-[#141414]">
+                <a href="#home" class="font-bold text-white text-2xl flex-center pb-25 tablet:hidden">
+                    Med
+                    <span class="inline-block text-main-color text-3xl translate-y-[4px]">•</span>
+                    Reda
+                </a>
+                <ul class="flex-between gap-x-10 max-tablet:gap-y-6 max-tablet:flex-col max-tablet:justify-center">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+            <i class="fi fi-sr-menu-burger burger translate-y-[5px] text-2xl cursor-pointer duration-200 tablet:hidden"></i>
+        </div>
+    </header>
+    <div class="filter duration-200 mt-25">
+        <main id="home" class="max-tablet:h-[90vh] overflow-x-hidden">
+            <div class="container h-full flex-between max-tablet:flex-col max-tablet:justify-center max-phone:gap-y-5 max-tablet:gap-y-8">
+                <div class="text tablet:-translate-y-15 h-fit">
+                    <h1 class="title font-bold text-5xl max-phone:text-4xl mb-4 max-tablet:mb-3 text-white">HI, I AM<br>MOHAMED REDA ELARABI.</h1>
+                    <h2 class="font-bold text-5xl max-phone:text-4xl text-main-color mb-15 max-tablet:mb-10">Front-End Web Developer</h2>
+                    <a href="Assets/pic-1.png" download class="py-3 px-5 rounded-md bg-main-color text-white font-bold">Download My CV</a>
+                </div>
+                <div class="pic relative tablet:-translate-y-10">
+                    <img src="Assets/pic-1.png" alt="pic-1" class="w-[550px] relative">
+                </div>
+            </div>
+        </main>
+        <section id="about" class="h-[200vh]"></section>
+    </div>
+    <script type="module" src="JS/script.js"></script>
+</body>
+</html>

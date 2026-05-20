@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@theme{
+    --breakpoint-fold: 40rem;
+    --breakpoint-phone: 48rem;
+    --breakpoint-tablet: 62rem;
+    --breakpoint-laptop: 64rem;
+    --color-main-color: #FD6F00;
+    --color-main-bg: #0a0a0a;
+    --color-2nd-bg: #1b1b1b;
+    --color-title-color: #FEFEFE;
+    --color-sub-title-color: #707070;
+    --color-text-color: #BABABA;
+}
+
+@utility flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@utility flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+nav li{
+    @apply max-tablet:w-full
+}
+
+nav li a{
+    @apply duration-125 max-tablet:font-bold max-tablet:block max-tablet:py-4 max-tablet:px-8 max-tablet:w-full max-tablet:rounded-[50px]
+}
+
+
+nav a.active, nav li a:hover{
+    @apply text-main-color max-tablet:bg-main-color/20
+}
+
+main#home .pic::before{
+    position: absolute;
+    content: " ";
+    top: 59%;
+    left: 50%;
+    translate: -50% -50%;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    background-color: #1b1b1b;
+    @media (max-width:768px){
+        height: 370px;
+        width: 370px;
+    }
+    @media (max-width:375px){
+        height: 330px;
+        width: 330px;
+    }
+}
