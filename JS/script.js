@@ -36,3 +36,8 @@ nav_eles.forEach(ele => {
 })
 
 menu_btn.addEventListener("click", menu_toggle)
+window.addEventListener("resize", ()=>{
+    if (nav.classList.contains("max-lg:left-0")) {
+        menu_toggle()
+    }
+})
