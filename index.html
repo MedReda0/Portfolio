@@ -30,18 +30,32 @@
             </nav>
             <i class="fi fi-sr-menu-burger burger translate-y-[5px] text-2xl cursor-pointer duration-200 tablet:hidden"></i>
     </header>
-    <div class="filter duration-200 mt-25">
-        <main id="home" class="max-tablet:h-[90vh]  flex-between max-tablet:flex-col max-tablet:justify-center max-phone:gap-y-5 max-tablet:gap-y-8">
+    <div class="filter duration-200 mt-25 max-tablet:mt-20">
+        <main id="home" class="mb-25 h-screen flex-between max-tablet:flex-col max-tablet:justify-center max-phone:gap-y-5 max-tablet:gap-y-8">
             <div class="text tablet:-translate-y-15 h-fit">
-                <h1 class="title font-bold text-5xl max-phone:text-4xl mb-4 max-tablet:mb-3 text-white">HI, I AM<br>MOHAMED REDA ELARABI</h1>
+                <h1 class="font-bold text-5xl max-phone:text-4xl mb-4 max-tablet:mb-3 text-white">HI, I AM<br>MOHAMED REDA ELARABI</h1>
                 <h2 class="font-bold text-5xl max-phone:text-4xl text-main-color mb-13 max-tablet:mb-10">Front-End Web Developer</h2>
-                <a href="Assets/Elarabi Mohamed Reda Resume.pdf" download class="py-3 px-5 rounded-[6px] bg-main-color text-white font-bold">Download My CV</a>
+                <a href="Assets/Elarabi Mohamed Reda Resume.pdf" download class="flex-between w-fit gap-x-2 py-2.5 px-5 rounded-[6px] bg-main-color text-white font-bold border border-transparent duration-175 hover:bg-transparent hover:border-main-color hover:text-main-color">
+                    Download My CV
+                    <!-- <i class="fi fi-sr-file-download text-2xl block translate-y-[1px]"></i> -->
+                </a>
             </div>
             <div class="pic relative tablet:-translate-y-10">
                 <img src="Assets/pic-1.png" alt="pic-1" class="w-[550px] relative">
             </div>
         </main>
-        <section id="about" class=""></section>
+        <section id="about" class="">
+            <div class="title max-tablet:mb-8!">ABOUT ME</div>
+            <div class="flex-between max-tablet:flex-col-reverse gap-12">
+                <div class="pic w-[450px] max-phone:w-fit bg-2nd-bg flex-center rounded-[15px]">
+                    <img src="Assets/pic-2.png" alt="pic-2" class="w-[420px]">
+                </div>
+                <div class="text w-[670px] max-tablet:w-fit">
+                    <h3 class="text-white max-tablet:text-2xl text-3xl mb-3">I am a web developer who loves building digital solutions.<br>Has a background in computer sciences and content moderation.</h3>
+                    <p class="tablet:text-[18px]">I am a web developer looking for exciting opportunities. Backed by a diverse background that spans technical development and platform moderation, I bring a unique blend of critical thinking, decision-making, and sharp attention to detail to my work. I am passionate and curious about solving complex digital problems, treating every challenge as a creative opportunity. While I am not programming, I enjoy photography, competitive gaming, and staying motivated by new tech trends. Always learning more to improve my skill.</p>
+                </div>
+            </div>
+        </section>
     </div>
     <script type="module" src="JS/script.js"></script>
 </body>

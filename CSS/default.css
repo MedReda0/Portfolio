@@ -31,12 +31,16 @@
     border-radius: 50px;
 }
 
+.filter{
+    scroll-snap-type: y mandatory;
+}
+
 .container,header,main,section,footer {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: 1rem;
-    padding-left: 1rem
+    padding-left: 1rem;
 }
 
 @media (min-width: 450px) {
@@ -73,4 +77,8 @@
     .container,header,main,section,footer {
         max-width:1600px
     }
+}
+
+section {
+    scroll-snap-align: start;
 }
