@@ -30,22 +30,29 @@
             </nav>
             <i class="fi fi-sr-menu-burger burger translate-y-[5px] text-2xl cursor-pointer duration-200 tablet:hidden"></i>
     </header>
-    <div class="filter duration-200 mt-25 max-tablet:mt-20">
+    <div class="filter duration-200 mt-18">
         <main id="home" class="mb-25 h-screen flex-between max-tablet:flex-col max-tablet:justify-center max-phone:gap-y-5 max-tablet:gap-y-8">
-            <div class="text tablet:-translate-y-15 h-fit">
+            <div class="text tablet:-translate-y-15">
                 <h1 class="font-bold text-5xl max-phone:text-4xl mb-4 max-tablet:mb-3 text-white">HI, I AM<br>MOHAMED REDA ELARABI</h1>
                 <h2 class="font-bold text-5xl max-phone:text-4xl text-main-color mb-13 max-tablet:mb-10">Front-End Web Developer</h2>
-                <a href="Assets/Elarabi Mohamed Reda Resume.pdf" download class="flex-between w-fit gap-x-2 py-2.5 px-5 rounded-[6px] bg-main-color text-white font-bold border border-transparent duration-175 hover:bg-transparent hover:border-main-color hover:text-main-color">
-                    Download My CV
-                    <!-- <i class="fi fi-sr-file-download text-2xl block translate-y-[1px]"></i> -->
-                </a>
+                <div class="links flex items-center gap-x-4">
+                    <a href="Assets/Elarabi Mohamed Reda Resume.pdf" download class="py-3 px-5 rounded-[50px] bg-main-color text-white font-bold duration-175 hover:bg-white hover:text-main-color">
+                        Download My CV
+                    </a>
+                    <a href="https://github.com/MedReda0" target="_blank" rel="noopener" class="text-[47px]!">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohamed-reda-elarabi" target="_blank" rel="noopener">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </div>
             </div>
             <div class="pic relative tablet:-translate-y-10">
                 <img src="Assets/pic-1.png" alt="pic-1" class="w-[550px] relative">
             </div>
         </main>
-        <section id="about" class="">
-            <div class="title max-tablet:mb-8!">ABOUT ME</div>
+        <section id="about">
+            <div class="title max-tablet:mb-8! tablet:ml-1">ABOUT ME</div>
             <div class="flex-between max-tablet:flex-col-reverse gap-12">
                 <div class="pic w-[450px] max-phone:w-fit bg-2nd-bg flex-center rounded-[15px]">
                     <img src="Assets/pic-2.png" alt="pic-2" class="w-[420px]">
@@ -56,7 +63,34 @@
                 </div>
             </div>
         </section>
+        <section id="skills">
+            <div class="title"><span class="font-normal">My</span> Skills</div>
+            <div class="boxs text-xl grid grid-cols-5 max-tablet:grid-cols-2 max-phone:grid-cols-1 gap-6">
+                <div class="box">
+                    <img src="Assets/html.png" alt="Html">
+                    <div class="name">HTML</div>
+                </div>
+                <div class="box">
+                    <img src="Assets/css.png" alt="Css">
+                    <div class="name">CSS</div>
+                </div>
+                <div class="box">
+                    <img src="Assets/js.png" alt="Js">
+                    <div class="name">JS</div>
+                </div>
+                <div class="box">
+                    <img src="Assets/Tailwind.png" alt="Tailwind">
+                    <div class="name">Tailwind</div>
+                </div>
+                <div class="box">
+                    <img src="Assets/GSAP.webp" alt="Gsap">
+                    <div class="name">Gsap</div>
+                </div>
+            </div>
+        </section>
     </div>
     <script type="module" src="JS/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

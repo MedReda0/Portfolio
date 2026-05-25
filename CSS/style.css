@@ -95,6 +95,22 @@ main#home .pic::before{
     }
 }
 
+main#home .links a:not(:first-of-type){
+    @apply text-main-color text-[43px] flex-center duration-175 hover:text-white
+}
+
+#skills .boxs .box{
+    @apply flex-between flex-col gap-7 w-fit py-7 px-9 text-white font-bold border-3 border-white rounded-[15px] duration-175 hover:border-main-color hover:text-main-color
+}
+
+#skills .boxs .box img{
+    @apply w-[100px]
+}
+
+/* #skills .boxs .box img:nth-of-type(4){
+    @apply block -translate-y-[50px]
+} */
+
 section{
     @apply mb-25
 }
