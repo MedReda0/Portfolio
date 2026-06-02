@@ -44,15 +44,15 @@
 }
 
 .shadow {
-    box-shadow: 0px 5px 10px 0px #d88a02;
+    box-shadow: 0px 0px 45px -10px rgba(253, 111, 0, 0.8);
     transition: .15s;
 
 }
 
-.shadow:hover {
+/* .shadow:hover {
     transform: translateY(-5px);
     box-shadow: 0px 7px 12px 2px #d88a02;
-}
+} */
 
 nav li {
     @apply max-tablet:w-full
@@ -62,9 +62,12 @@ nav li a {
     @apply duration-125 font-medium max-tablet:font-bold max-tablet:block max-tablet:py-3 max-tablet:px-8 max-tablet:w-full max-tablet:rounded-[50px]
 }
 
-
-nav a.active, nav li a:hover {
+nav a.active, nav li a.active:hover {
     @apply text-main-color max-tablet:bg-main-color/20
+}
+
+nav li a:hover {
+    @apply text-white max-tablet:bg-main-color/20
 }
 
 main#home h1 {
@@ -98,12 +101,18 @@ main#home .pic::before {
     }
 }
 
-#about .pic {
-    box-shadow: 0 0 40px rgba(253,111,0,0.18);
-}
 
 main#home .links a:not(:first-of-type) {
-    @apply text-main-color text-[43px] flex-center duration-175 hover:text-white
+    @apply text-main-color text-[43px] flex-center duration-175;
+}
+
+main#home .links a:not(:first-of-type):hover {
+    color: var(--color-white);
+}
+
+.download-btn:hover {
+    background-color: #fff;
+    color: var(--color-main-color);
 }
 
 section {
@@ -119,8 +128,13 @@ section {
 }
 
 #skills .card {
-    @apply rounded-[20px] border border-white/10 bg-[#0b0b0d] p-6;
+    @apply rounded-[20px] border border-white/10 bg-[#0b0b0d] p-6 duration-250;
 }
+
+#skills .card:hover{
+    @apply border-main-color
+}
+
 
 #skills .text {
     @apply flex items-center gap-6 max-tablet:flex-col max-tablet:items-start;
