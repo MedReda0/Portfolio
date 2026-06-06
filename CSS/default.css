@@ -3,8 +3,9 @@
 @import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
 @import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-straight/css/uicons-solid-straight.css');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import url('https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css');
+@import url('https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-straight/css/uicons-bold-straight.css');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 *{
     box-sizing: border-box;
@@ -28,7 +29,7 @@
 ::-webkit-scrollbar-thumb{
     height: 30px;
     transition: .5s;
-    background: #FD6F00;
+    background: rgba(253, 110, 0, 0.7);
     border-radius: 50px;
 }
 

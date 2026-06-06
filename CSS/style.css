@@ -111,8 +111,7 @@ main#home .links a:not(:first-of-type):hover {
 }
 
 .download-btn:hover {
-    background-color: #fff;
-    color: var(--color-main-color);
+    @apply bg-[#fff] text-main-color
 }
 
 section {
@@ -144,7 +143,7 @@ section {
     @apply w-12 mb-5;
 }
 
-#skills .text>img {
+#skills .card img {
     @apply w-16 h-16 object-contain rounded-lg bg-white/5 p-3;
 }
 
@@ -158,4 +157,65 @@ section {
 
 #skills .card p {
     @apply text-white/70;
+}
+
+#projects .project-card{
+    @apply flex-center max-tablet:flex-col items-stretch gap-12 p-7 rounded-xl border-2 border-transparent duration-250
+}
+
+#projects .project-card:hover{
+    @apply border-main-color
+}
+
+#projects .project-card .pic{
+    @apply h-full tablet:h-[500px] tablet:w-1/2 p-5 tablet:py-14 tablet:px-8 bg-white/5 rounded-xl
+}
+
+#projects .project-card .pic img{
+    @apply rounded-lg size-full bg-contain
+}
+
+#projects .project-card .text{
+    @apply tablet:w-1/2 tablet:py-20
+}
+
+#projects .project-card .text h3{
+    @apply text-white text-2xl mb-3
+}
+
+#projects .project-card .text .info{
+    @apply my-7 text-white
+}
+
+#projects .project-card .text .info h4{
+    @apply uppercase
+}
+
+#projects .project-card .text .info h4,
+#projects .project-card .text .info div{
+    @apply mb-3 pb-3 border-b border-white/20 flex-between
+}
+
+#projects .project-card .text .info div span{
+    @apply text-text-color ml-3.5
+}
+
+#projects .project-card .text .view{
+    @apply space-x-4
+}
+
+#projects .project-card .text .view a{
+    @apply uppercase duration-150 text-main-color border-b-2 pb-1
+}
+
+#projects .project-card .text .view a:hover{
+    @apply text-white
+}
+
+#projects .project-card .text .view i{
+    @apply ml-1 text-[11px]
+}
+
+#projects .project-card .text .view ion-icon{
+    @apply ml-1 translate-y-[3px] text-[20px]
 }
