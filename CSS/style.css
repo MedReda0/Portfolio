@@ -39,8 +39,11 @@
 
 .title {
     font-family: "Bebas Neue", sans-serif;
-
     @apply font-bold text-white max-phone:text-4xl text-[45px] mb-18;
+}
+
+.sub{
+    @apply mb-18
 }
 
 .shadow {
@@ -115,7 +118,7 @@ main#home .links a:not(:first-of-type):hover {
 }
 
 section {
-    @apply mb-25
+    @apply mb-30
 }
 
 #skills .category {
@@ -160,7 +163,7 @@ section {
 }
 
 #projects .project-card{
-    @apply flex-center max-tablet:flex-col items-stretch gap-12 p-7 rounded-xl border-2 border-transparent duration-250
+    @apply flex-center max-tablet:flex-col items-stretch gap-12 p-4 tablet:pl-0 rounded-xl border-2 border-transparent duration-250
 }
 
 #projects .project-card:hover{
@@ -205,7 +208,7 @@ section {
 }
 
 #projects .project-card .text .view a{
-    @apply uppercase duration-150 text-main-color border-b-2 pb-1
+    @apply uppercase duration-150 text-main-color border-b-2 pb-1 text-sm
 }
 
 #projects .project-card .text .view a:hover{
@@ -219,3 +222,45 @@ section {
 #projects .project-card .text .view ion-icon{
     @apply ml-1 translate-y-[3px] text-[20px]
 }
+
+#contact .card {
+    @apply flex items-center gap-4 p-6 rounded-[20px] bg-[#0f0f12] border border-white/10 duration-250;
+}
+
+#contact .card:hover{
+    @apply border-main-color
+}
+
+#contact .icon {
+    @apply flex-center translate-y-[4px] rounded-full size-14 bg-main-color text-black text-xl font-bold;
+}
+
+#contact .icon ion-icon{
+    @apply text-[30px]
+}
+
+#contact form {
+    @apply p-8 rounded-[30px] bg-[#0f0f12] border border-white/10;
+}
+
+#contact label {
+    @apply text-white/70 text-sm block mb-2;
+}
+
+#contact input,
+#contact textarea{
+    @apply w-full rounded-[15px] border border-white/10 bg-[#121212] px-4 py-4 text-white duration-200 outline-none focus:border-main-color resize-none;
+}
+
+#contact button {
+    @apply w-full rounded-[15px] bg-main-color py-4 text-black font-bold transition duration-150 hover:opacity-90;
+}
+
+#contact .info span {
+    @apply text-white/50 uppercase text-[11px] tracking-[0.3em];
+}
+
+#contact .info p {
+    @apply text-white mt-2;
+}
+
