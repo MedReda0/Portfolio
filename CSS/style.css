@@ -106,7 +106,7 @@ main#home .pic::before {
 
 
 main#home .links a:not(:first-of-type) {
-    @apply text-main-color text-[43px] flex-center duration-175;
+    @apply text-main-color text-[43px] flex-center transition-colors duration-175;
 }
 
 main#home .links a:not(:first-of-type):hover {
@@ -131,7 +131,7 @@ main, section {
 }
 
 #skills .card {
-    @apply rounded-[20px] border border-white/10 bg-[#0b0b0d] p-6 duration-250;
+    @apply rounded-[20px] border border-white/10 bg-[#0b0b0d] p-6 transition-colors duration-250;
 }
 
 #skills .card:hover {

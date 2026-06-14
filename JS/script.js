@@ -61,13 +61,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
     })
     
     const main_tl = gsap.timeline({})
-    const h1_split = SplitText.create("main h1",{type:"lines",mask:"lines"})
-    const h2_split = SplitText.create("main h2",{type:"words",mask:"words"})
-    main_tl.from(h1_split.lines, { y: -200, opacity: 0, duration: 1.2, stagger:.3, ease: "power4.out" })
-        .fromTo("main .pic", { x: 300, opacity: 0, filter: "blur(10px)" }, { x: 0, opacity: 1, filter: "blur(0px)", duration: 1.7, ease: "power4.out" },"<")
-        .from(h2_split.words, { opacity: 0, duration: 1, stagger: .3, ease: "power3.out" },"-=.7")
-        .fromTo("main .links a", { opacity: 0, filter: "blur(7px)" }, { opacity: 1, filter: "blur(0px)", duration: .3, stagger: .2, ease: "power3.out" }, "-=.5");
+    const name_split = SplitText.create("main h1",{type:"lines",mask:"lines"})
+    const role_split = SplitText.create("main h2",{type:"words",mask:"words"})
+    main_tl.from(name_split.lines, { y: -200, opacity: 0, duration: 1.2, stagger:.3, ease: "power4.out" })
+        .from("main .pic", { x: 300, opacity: 0, filter: "blur(10px)" , duration: 1.7, ease: "power4.out" },"<")
+        .from(role_split.words, { opacity: 0, duration: 1, stagger: .3, ease: "power3.out" },"-=.7")
+        .from("main .links a", { opacity: 0, filter: "blur(7px)" , duration: .3, stagger: .2, ease: "power3.out" }, "-=.7");
     
-    const about_tl = gsap.timeline({})
-    
+    const about_tl = gsap.timeline({ scrollTrigger: { trigger: "#about", start: "top 80%" } })
+    const about_spilt = SplitText.create("#about h3", { type: "lines", mask: "lines" })
+    about_tl.from(about_spilt.lines, { opacity: 0, duration: 1.2, stagger: .3, ease: "power4.out" },"+=.5")
+        .from("#about p", { opacity: 0, filter: "blur(10px)", duration: .7, ease: "power4.out" },"-=1")
+        .from("#about .pic", { x: -300, opacity: 0, filter: "blur(10px)", duration: 1.7, ease: "power4.out", scrollTrigger: { trigger: "#about .pic", start: "top 90%" } }, "-=1.9")
+
+    const skills_tl = gsap.timeline({ scrollTrigger: { trigger: "#skills .rows", start: "top 80%" } })
+    document.querySelectorAll("#skills .rows").forEach((row,i) => {
+        skills_tl.from(row.querySelector(".category"), { x: -100, opacity: 0, filter: "blur(10px)", duration: .8, ease: "power4.out" })
+            .from(row.querySelectorAll(".card"), { x: -100, opacity: 0, filter: "blur(10px)", duration: .6, stagger: .5, ease: "power3.out" }, "-=.2")
+    })
 });
